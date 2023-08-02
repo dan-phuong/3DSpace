@@ -5,8 +5,7 @@ import java.awt.Graphics;
 public class PolygonObject {
     Polygon polygon;
     Color color;
-    // average distance 
-    double dist = 0;
+    double averageDist = 0;
 
     /**
      * Creates Polygon object on screen

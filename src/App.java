@@ -4,13 +4,15 @@ import java.awt.Dimension;
 
 public class App extends JFrame{
 
+    public static Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize(); 
     public static JFrame frame = new App();
     public Screen screen = new Screen();
-    //public static Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+
+
     public App(){
         add(screen);
         setUndecorated(true);
-        setSize(Toolkit.getDefaultToolkit().getScreenSize());
+        setSize(screenSize);
         setVisible(true);
         
     }
